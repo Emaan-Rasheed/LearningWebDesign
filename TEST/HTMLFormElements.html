@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <!--Select element & Legent element-->
+        <form style="background-color:bisque"><fieldset>
+            <legend>Personalia:</legend>
+            <h1>Select element</h1>
+            <p> Will display drop-down list.</p>
+            <label for="cars" >Choose your favrt car:</label>
+            <select id="cars" name="cars">
+                <option value="BMW">BMW</option>
+                <option value="V8">V8</option>
+                <option value="Prado">Prado</option>
+                <option value="Audi">Audi</option>
+            </select><br>
+            <input type="Submit" value="Submit">
+        </fieldset></form><br><br>
+    <!--TextArea element-->
+    <form>
+        <textarea style="background-color:bisque" name="message" rows="10" cols="30">Type your message here.
+        </textarea><br>
+        <input type="submit" value="submit"><br><br>
+    </form>
+    <!--Output element-->
+    <h1>Output Element</h1>
+    <form oninput ="x.value=parseInt(a.value)+parseInt(b.value)"0>
+            <input type="range" id="a" name="a" value="50" min="0" max="100">100 +
+            <input type="range" id="b" name="b" value="50" min="0" max="100"> =
+            <output name ="x" for="a b" ></output>
+            <br><br>
+            <input type="submit">
+    </form><br><br>
+    <!--max and min-->
+    <form>
+        <h1>Use of Max & Min</h1>
+        <label for="MinDate">Select date after 2000-01-01:</label>
+        <input type="date" id="MinDate" name="MinDate" min="2000-01-01"><br>
+        <label for="MaxDate">Select date before 1980-01-01:</label>
+        <input type="date" id="MaxDate" name="MaxDate" max="1980-01-01"><br>
+        <input type="submit">
+    </form><br><br>
+    <!--display image-->
+    <form>
+        <h1>Image Display</h1>
+        <input type="Image" src="nature logo.jpg" width="250" height="250">
+    </form>
+    <!--Readonly Attribute-->
+    <form>
+        <h1>ReadOnly Attribute</h1>
+        <label for="fname">First Name</label>
+        <input style="background-color:bisque" type="text" id="fname" name="fname" value="Emaan" readonly><br>
+        <label for="Lname">Last Name</label>
+        <input style="background-color:bisque" type="Lname" id="Lname" name="Lname" value="Rasheed" readonly><br>
+        <input type="submit" value="submit">
+    </form><br><br>
+    <form>
+        <h1>Disabled Attribute</h1>
+        <label for="fname">First Name</label>
+        <input style="background-color:bisque" type="text" id="fname" name="fname" value="Emaan" disabled><br>
+        <label for="Lname">Last Name</label>
+        <input style="background-color:bisque" type="Lname" id="Lname" name="Lname" value="Rasheed" disabled><br>
+        <input type="submit" value="submit">
+    </form>
+
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        header {
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 15px;
+            text-align: center;
+        }
+        header img {
+            float: left;
+            height: 50px;
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .content-section aside {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-section, .audio-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .video-section > div, .audio-section > figure {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        video, audio {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            text-align: center;
+            margin-top: 9px;
+        }
+        @media only screen and (max-width: 620px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+            header img {
+                display: block;
+                margin: 0 auto 20px;
+                float: none;
+            }
+            .content-section aside, .video-section > div, .audio-section > figure {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="nature logo.png" alt="logo">
+        <h1 style="text-shadow: 2px 2px 5px black"><b>Practice Web Design</b></h1>
+    </header>
+    <section class="navbar"> 
+        <a href="home.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </section>
+    <br>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; text-decoration-line: underline"><b>IMAGES</b></h1>
+    <section class="content-section">
+        <aside>
+            <figure>
+                <img src="sunrise.jpg" alt="picture of sunrise" title="Sunrise">
+                <figcaption style="text-align: justify"><b>SUNRISE</b><br>
+                    Leaves are nature's intricate masterpieces, showcasing a wide array of shapes, sizes, and colors. 
+                    They serve as the vital organs of plants, harnessing sunlight through photosynthesis to produce energy. 
+                    In their veins and textures, leaves tell the story of growth and change,
+                    transforming the landscape with their seasonal shifts. 
+                </figcaption>
+            </figure>
+        </aside>
+        <aside>
+            <figure>
+                <img src="nature images.jpg" alt="picture of nature" title="Nature">
+                <figcaption style="text-align: justify"><b>NATURE</b><br>
+                    Nature, in its purest form, is a symphony of the Earth's diverse landscapes and ecosystems.
+                    From towering mountains and deep oceans to lush forests and vast deserts, it offers a 
+                    serene and majestic beauty that captivates the senses. The harmonious interaction between flora and fauna, coupled with the ever-changing seasons,
+                    creates a dynamic and vibrant tapestry that sustains life and inspires wonder.
+                </figcaption>
+            </figure>
+        </aside>
+        <aside>
+            <figure>
+                <img src="images.jpg" alt="picture of Leaves"  title="leaves">
+                <figcaption style="text-align: justify"><b>LEAVES</b><br>
+                    Leaves are nature's intricate masterpieces, showcasing a wide array of shapes, sizes, and colors. They serve as the vital organs of plants, 
+                    harnessing sunlight through photosynthesis to produce energy. 
+                    In their veins and textures, leaves tell the story of growth and change, transforming the landscape with their seasonal shifts from vibrant 
+                    greens to fiery autumn hues. Each leaf, unique and delicate, plays a crucial role in sustaining life.
+                </figcaption>
+            </figure>
+        </aside>
+    </section>
+    <br><br><br>
+    <section>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; text-decoration-line: underline"><b>VIDEOS</b></h1>
+        <div class="video-section">
+            <div>
+                <video title="Flower" controls>
+                    <source src="flowers.mp4" type="video/mp4">
+                    Browser does not support the video tag.
+                </video>
+                <figcaption style="text-align: justify"><b>FLOWERS</b><br>
+                    Watch these beautiful flowers sway gracefully
+                    soothing display of nature's elegance in motion.
+                </figcaption>
+            </div>
+            <div>
+                <video title="Moving Water" autoplay>
+                    <source src="moving water.mp4" type="video/mp4">
+                    Browser does not support the video tag.
+                </video>
+                <figcaption style="text-align: justify"><b>MOVING WATER</b><br>
+                    The river flowed swiftly, its surface rippling with a silver
+                    sheen under the midday sun, carrying stories within its murmuring currents.
+                </figcaption>
+            </div>
+            <div>
+                <video title="Butterfly" autoplay muted>
+                    <source src="butterfly.mp4" type="video/mp4">
+                    Browser does not support the video tag.
+                </video>
+                <figcaption style="text-align: justify"><b>BUTTERFLY</b><br>
+                    Witness the enchanting flutter of butterflies,
+                    painting the sky with vibrant colors and delicate movements. Nature's delicate dance in motion.
+                </figcaption>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; text-decoration-line: underline"><b>AUDIOS</b></h1>
+        <div class="audio-section">
+            <figure>
+                <audio controls>
+                    <source src="piano sounds.mp3" type="audio/mp3">
+                    Browser does not support the audio tag.
+                </audio>
+                <figcaption><b>PIANO AUDIO</b></figcaption>
+            </figure>
+            <figure>
+                <audio controls autoplay>
+                    <source src="peaceful sounds.mp3" type="audio/mp3">
+                    Browser does not support the audio tag.
+                </audio>
+                <figcaption><b>PEACEFUL AUDIO</b></figcaption>
+            </figure>
+            <figure>
+                <audio controls autoplay muted>
+                    <source src="relaxing sounds.mp3" type="audio/mp3">
+                    Browser does not support the audio tag.
+                </audio>
+                <figcaption><b>RELAXING AUDIO</b></figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer>@ copyright nature.com </footer>
+</body>
+</html>

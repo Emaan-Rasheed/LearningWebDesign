@@ -1,0 +1,25 @@
+body{
+    background-color:navy;
+    color:beige;
+}
+h1{
+    background-color:brown !important;
+    color:aqua;
+}
+body{
+    background-color: red;
+    color:blueviolet;
+}
+table, th, td{
+    border:1px solid black;
+}
+th,td{
+    background-color:beige;
+    border-style:dotted;
+    padding: 15px;
+    border-spacing: 10px;
+}
+tr:nth-child(even){
+
+    background-color:blueviolet;
+}
