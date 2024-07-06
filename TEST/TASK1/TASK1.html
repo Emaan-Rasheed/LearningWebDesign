@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width" initial-scale="1.0">
+        <title>Cover Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items:normal;
+            justify-content: center;
+            min-height: 100vh;
+            border-radius: 20px;
+            overflow:hidden;
+            background-color: #ffffff; 
+        }
+        header{
+            width: 100%;
+            padding: 15px;
+            background-color: rgb(245, 239, 239);
+        }
+        header img{
+            float:left;
+            height: 40px;
+        }
+        header button{
+            background-color: blueviolet;
+            color:black;
+            justify-content: center;
+            align-items: center;
+            background-blend-mode: color;
+            float:none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: oblique;
+        }
+        .navbar{
+            background-color: whitesmoke;
+            overflow:hidden;
+        }
+        .navbar a{
+            float:left;
+            display: block;
+            color:black;
+            text-align: center;
+            padding:14px 20px;
+            text-decoration: none;
+        }
+        .emoji{
+            font-size:20px
+        }
+        .container-logo{
+            display:flex;
+            background-color: white;
+            align-items: center;
+            padding:5px;
+        }
+        .circle{
+            width:50px;
+            height:50px;
+            display: flex;
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            
+        }
+        .circle img{
+            width:60%;
+            height:auto;
+        }
+        @media only screen and (max-width: 620px) {
+            .navbar a {
+                padding: 10px;
+            }
+            header img {
+                height: 30px;
+            }
+            .container-logo {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+      
+    </style>
+
+    </head>
+    <body>
+        <header>
+            <section class="navbar">
+                <img src="jenny logo.jpg" alt="LOGO">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Conatct.html">Contact</a><br>
+                <button>Let's Chat &#128172;</button>
+            </section>
+        </header>
+        <section>
+            <aside style="float:right; width:50%;" >
+                <img style="height: 450px;" src="right pic.jpg" alt="picture" title="front picture"><br>  
+            </aside>
+            <aside style="float:left; width:50%;">
+                <h3 style= "font-size:medium; padding-left:1in;font-family:Arial, Helvetica, sans-serif"> 
+                     WELCOME TO MY WORLD</h3>
+                <H1 style="font-size:x-large; padding-left:1in;font-family:Verdana, Geneva, Tahoma, sans-serif"> Hi I'm Jenny</H1>
+                <h2 style="font-size: large; padding-left:1in;font-family:Verdana, Geneva, Tahoma, sans-serif; color:blueviolet">
+                     Frontend Developer</h2>
+                <p style="text-align: left; padding-left:1in;">  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam distinctio quasi iste labore temporibus obcaecati sint, 
+                    impedit temporeunde illo dignissimos dolorum natus inventore,
+                    nemo.</p><br>
+                <div style="padding-left:1in;">
+                <button > Hire Me Now! &rarr; </button>
+                <button > Download CV</button></div><br><br>
+                <div style="padding-left:1in;" class="container-logo">
+                    <div class="circle">
+                        <img src="instalogo.jpeg" alt="insta logo" title="logo insta">
+                    </div>
+                    <div class="circle">
+                        <img src="whatsapplogo.jpeg" alt="whatsapp logo" title="whatsapp logo">
+                    </div>
+                    <div class="circle">
+                        <img src="fblogo.jpeg" alt="fb logo" title="fb logo">
+                    </div>
+                    <div class="circle">
+                        <img src="twitterlogo.png" alt="twitter logo" title="twitter logo">
+                    </div>
+                </div>
+                <aside>
+        </section>
+        <footer></footer>
+    </body>
+</html>
