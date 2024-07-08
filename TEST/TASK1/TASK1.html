@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta name="viewport"  content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Cover Page</title>
     <style>
-        body {
+        body{
             margin: 0;
             padding: 0;
             display: flex;
@@ -14,124 +16,153 @@
             min-height: 100vh;
             border-radius: 20px;
             overflow:hidden;
-            background-color: #ffffff; 
+            background-color:whitesmoke; 
         }
-        header{
-            width: 100%;
-            padding: 15px;
-            background-color: rgb(245, 239, 239);
+        
+        .logo{
+            font-size:2em;
+            letter-spacing: 2px;
         }
-        header img{
-            float:left;
-            height: 40px;
+        nav{
+                width: 100%;
+                height: 50px;
+                color:rgb(17, 16, 16);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background:white;
+                font-family: sans-serif;
         }
-        header button{
-            background-color: blueviolet;
-            color:black;
-            justify-content: center;
-            align-items: center;
-            background-blend-mode: color;
-            float:none;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-style: oblique;
-        }
-        .navbar{
-            background-color: whitesmoke;
-            overflow:hidden;
-        }
-        .navbar a{
-            float:left;
-            display: block;
-            color:black;
-            text-align: center;
-            padding:14px 20px;
+        .menu a{
             text-decoration: none;
+            padding:10px 20px;
+            color:black;
+            position:relative;
         }
-        .emoji{
-            font-size:20px
+        .menu a:before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:0%;
+            height:100%;
+            transition:0.4s linear;
+        }
+        .menu a:hover{
+            color:blueviolet;
+        }
+        .button1 a{
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #6617cb;
+            background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+            padding:10px 20px;
+            color:white;
+        }
+        .button2 a{
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #6617cb;
+            background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+            padding:10px 20px;
+            color:white;
+        }
+        .button3 a{
+            color:black;
+            text-decoration: none;
+            border-radius: 8px;
+            padding:10px 20px;
+            background-color: white; 
+            background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+        }
+        .circle{
+            background-color:white;
+            width: 30px; 
+            height: 30px;
+            object-fit: cover; 
+            align-items: center;
+            border-radius: 50px;
+            justify-content: space-around;
+            padding: 5px;
+            display:flex;
+            border:5px solid rgb(193, 32, 193);
+            
         }
         .container-logo{
+            float: left;
             display:flex;
-            background-color: white;
+            background-color: whitesmoke;
             align-items: center;
             padding:5px;
         }
-        .circle{
-            width:50px;
-            height:50px;
-            display: flex;
-            background-color: blueviolet;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50px;
-            
-        }
+        
         .circle img{
             width:60%;
             height:auto;
         }
-        @media only screen and (max-width: 620px) {
-            .navbar a {
-                padding: 10px;
-            }
-            header img {
-                height: 30px;
-            }
-            .container-logo {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+        .btn{
+            float: left;
+            display:flex;
+            background-color: whitesmoke;
+            align-items: center;
+            padding:5px;
         }
-      
-    </style>
-
+        </style>
     </head>
     <body>
         <header>
-            <section class="navbar">
-                <img src="jenny logo.jpg" alt="LOGO">
-                <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Services.html">Services</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Blog.html">Blog</a>
-                <a href="Conatct.html">Contact</a><br>
-                <button>Let's Chat &#128172;</button>
-            </section>
-        </header>
-        <section>
-            <aside style="float:right; width:50%;" >
-                <img style="height: 450px;" src="right pic.jpg" alt="picture" title="front picture"><br>  
-            </aside>
-            <aside style="float:left; width:50%;">
-                <h3 style= "font-size:medium; padding-left:1in;font-family:Arial, Helvetica, sans-serif"> 
-                     WELCOME TO MY WORLD</h3>
-                <H1 style="font-size:x-large; padding-left:1in;font-family:Verdana, Geneva, Tahoma, sans-serif"> Hi I'm Jenny</H1>
-                <h2 style="font-size: large; padding-left:1in;font-family:Verdana, Geneva, Tahoma, sans-serif; color:blueviolet">
-                     Frontend Developer</h2>
-                <p style="text-align: left; padding-left:1in;">  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quam distinctio quasi iste labore temporibus obcaecati sint, 
-                    impedit temporeunde illo dignissimos dolorum natus inventore,
-                    nemo.</p><br>
-                <div style="padding-left:1in;">
-                <button > Hire Me Now! &rarr; </button>
-                <button > Download CV</button></div><br><br>
-                <div style="padding-left:1in;" class="container-logo">
-                    <div class="circle">
-                        <img src="instalogo.jpeg" alt="insta logo" title="logo insta">
-                    </div>
-                    <div class="circle">
-                        <img src="whatsapplogo.jpeg" alt="whatsapp logo" title="whatsapp logo">
-                    </div>
-                    <div class="circle">
-                        <img src="fblogo.jpeg" alt="fb logo" title="fb logo">
-                    </div>
-                    <div class="circle">
-                        <img src="twitterlogo.png" alt="twitter logo" title="twitter logo">
-                    </div>
+            <nav>
+                <div class="logo">
+                    <b>Jenny</b>
                 </div>
-                <aside>
-        </section>
-        <footer></footer>
-    </body>
-</html>
+                <div class="menu">
+                        <a href="Home.html"><b>Home</b></a>
+                        <a href="About.html"><b>About</b></a>
+                        <a href="Services.html"><b>Services</b></a>
+                        <a href="Portfolio.html"><b>Portfolio</b></a>
+                        <a href="Blog.html"><b>Blog</b></a>
+                        <a href="Conatct.html"><b>Contact</b></a><br>
+                </div>
+                <div class="button1">
+                    <a href="Let'sChat.html">Let's Chat&#128172</a>
+                </div>
+            </nav>
+            </header>
+            <section>
+                <aside style="float:right; width:50%;" >
+                    <img style="height: 450px;" src="right pic.jpg" alt="picture" title="front picture"><br>  
+                </aside>
+                <aside style="float:left; width:50%;">
+                    <br><br>
+                    <h3 style= "font-size:medium;color:grey; padding-left:1in;font-family:Arial, Helvetica, sans-serif"> 
+                         WELCOME TO MY WORLD</h3>
+                    <H1 style="font-size:x-large; padding-left:1in;font-family:fantasy; letter-spacing: 2px; font-weight:bold;">
+                         Hi I'm Jenny</H1>
+                    <h2 style="font-size: large; padding-left:1in;font-family:Verdana, Geneva, Tahoma, sans-serif; color:blueviolet">
+                    <b>Frontend Developer</b></h2>
+                    <p style="text-align: left; padding-left:1in;font-family:sans-serif; color:grey;">  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quam distinctio quasi iste labore temporibus obcaecati sint, 
+                        impedit temporeunde illo dignissimos dolorum natus inventore,
+                        nemo.</p><br>
+                      <div style="padding-left:1in;" class="btn"> 
+                    <div class="button2"><a href="#">Hire Me Now!</a></div>
+                    <div class="button3"><a href="#">Download CV</a></div></div>
+                    <br><br><br>
+                    <div style="padding-left:1in;" class="container-logo">
+                        <div class="circle">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    </aside>
+            </section>
+            </body>
+            </html>
