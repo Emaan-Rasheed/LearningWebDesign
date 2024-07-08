@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Simple Landing Page</title>
+        <style>
+            header{
+                width:100%;
+                height:100vh;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                 url('bgtour.jpeg');
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color:rgb(251, 247, 247);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background:rgb(13, 54, 54);
+            }
+            .Logo{
+                letter-spacing: 2px;
+                font-size: 2em;
+            }
+            .menu a{
+                text-decoration: none;
+                color:rgb(251, 247, 247);
+                padding:10px 20px;
+                position:relative;
+            }
+            .register a{
+                text-decoration: none;
+                padding:10px 20px;
+                background: indianred;
+                border-radius: 8px;
+                color:rgb(251, 247, 247);
+            }
+            .menu a:before{
+                content: '';
+                position:absolute;
+                top:0;
+                left:0;
+                width: 0%;
+                height:100%;
+                border-bottom: 2px solid indianred;
+                transition:0.4s linear;
+            }
+            .menu a:hover:before{
+                width:90%;
+            }
+            .register a:hover{
+                width:90%;
+                background: transparent;
+            }
+            .h-txt{
+                max-width: 650px;
+                position:absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                color: azure;
+            }
+            .h-txt span{
+                letter-spacing: 5px;
+            }
+            .h-txt h1{
+                font-size: 3.5em;
+            }
+            .h-txt a{
+                text-decoration: none;
+                color:azure;
+                text-align: center;
+                border-radius: 8px;
+                letter-spacing: 5px;
+                background-color: indianred;
+                padding:10px 20px;
+                transition: 0.4s linear;
+            }
+            .h-txt a:hover{
+                background: transparent;
+                width:90%;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="Logo">
+                    Travel-X
+                </div>
+                <div class="menu">
+                    <a href="Home.html">Home</a>
+                    <a href="HillStation.html">Hill Station</a>
+                    <a href="BestOffer.html">Best Offer</a>
+                    <a href="OurSites.html">Our Sites</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                </div>
+                <div class="register">
+                    <a href="Register.html">Register</a>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <span>Enjoy</span>
+                <h1>International Travel Agency</h1>
+                <br>
+                <a href="#">Book Your Trips</a>
+            </section>
+
+        </header>
+
+    </body>
+</html>
